@@ -1,0 +1,10 @@
+
+]squid:S2142*"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+?squid:S1068"(Remove this unused "vars" private field.(Á‘¿¼
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ü¿Ìøÿÿÿÿ
+asquid:S1192;"JDefine a constant instead of duplicating this literal ".new-todo" 6 times.(õÚ¯“
+]squid:S21427"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+asquid:S1192'"JDefine a constant instead of duplicating this literal "AngularJS" 3 times.(ÌÒï 
+?squid:S11488"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148+"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+jsquid:S1450"SRemove the "vars" field and declare it as a local variable in the relevant methods.(Á‘¿¼
