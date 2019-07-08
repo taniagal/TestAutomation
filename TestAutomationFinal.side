@@ -1,0 +1,178 @@
+{
+  "id": "5e8d9a2c-711f-482d-802d-9da49ccfc6e4",
+  "version": "2.0",
+  "name": "TestAutomation",
+  "url": "http://todomvc.com",
+  "tests": [{
+    "id": "e7c70420-3e7d-4b62-89a5-a216299f5aa8",
+    "name": "ValidateTextValue",
+    "commands": [{
+      "id": "3d3bede2-5331-4f24-9421-c446cb8107d9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "840501c6-679b-4ac0-91c4-bb8a80b71a8b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1361x724",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e72c70b-360b-4b8d-a50e-bb40a5407de2",
+      "comment": "Text Validate",
+      "command": "click",
+      "target": "linkText=AngularJS",
+      "targets": [
+        ["linkText=AngularJS", "linkText"],
+        ["css=.js-app-list:nth-child(1) .routing:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'AngularJS')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'examples/angularjs')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'AngularJS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "310efdf4-41c0-40f7-83e1-166c37892f0a",
+      "comment": "Wait Visible Element",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d411613f-b386-42ff-a7b3-b294a0475324",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'AngularJS')]", "xpath:innerText"]
+      ],
+      "value": "AngularJS"
+    }]
+  }, {
+    "id": "4cbaf87e-1477-497b-bf76-602e049e4da4",
+    "name": "EntryDataInForm",
+    "commands": [{
+      "id": "9f09748e-dda2-4139-bfa0-8b987ba9a8aa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03d19e46-2697-4544-a840-69a1f5070800",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1361x724",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0275f7f5-bed9-4ea2-b603-58e83d401dbe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=AngularJS",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "549e0817-186a-4290-bf78-7e826966560e",
+      "comment": "Wait For Element",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a47f60e3-b7f5-45b8-b2d2-837bb4c6b72a",
+      "comment": "Add Milk Product",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Milk"
+    }, {
+      "id": "fe81abf7-6570-4f8c-bd5d-9a45967376f6",
+      "comment": "Save Milk Product",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "001858f0-106f-4f9f-9164-b269536a050b",
+      "comment": "Add Rice Product",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [],
+      "value": "Rice"
+    }, {
+      "id": "7d73a12f-7200-445d-8830-e1d21f9bfb6a",
+      "comment": "Save Rice Product",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "aac1c04f-8919-43c6-b4c2-565b5be27388",
+      "comment": "Add Meat Product",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [],
+      "value": "Meat"
+    }, {
+      "id": "6cd84a28-51a9-4f83-9d17-cf0c6337159d",
+      "comment": "Save Meat Product",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2c187df7-c4de-4490-9518-8e74a2454410",
+      "comment": "Save Products",
+      "command": "click",
+      "target": "linkText=Completed",
+      "targets": [
+        ["linkText=Completed", "linkText"],
+        ["css=.filters > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Completed')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#/completed')]", "xpath:href"],
+        ["xpath=//footer/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Completed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "706476fd-e4be-49be-9d0b-f8192da33196",
+      "comment": "Products Number",
+      "command": "assertText",
+      "target": "css=.todo-count",
+      "targets": [
+        ["css=.filters", "css:finder"],
+        ["xpath=//footer/ul", "xpath:position"]
+      ],
+      "value": "3 items left"
+    }, {
+      "id": "2e6b6ded-9dcb-4f9f-8bd2-53360ee7ab6b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1f6f6999-19b8-4e22-bd87-97e32353c2cf",
+    "name": "TestAutomation",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e7c70420-3e7d-4b62-89a5-a216299f5aa8", "4cbaf87e-1477-497b-bf76-602e049e4da4"]
+  }],
+  "urls": ["http://todomvc.com/"],
+  "plugins": []
+}
